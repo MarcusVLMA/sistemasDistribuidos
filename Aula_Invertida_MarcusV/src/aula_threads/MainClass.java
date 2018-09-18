@@ -24,16 +24,27 @@ public class MainClass {
 		RunnableRacer racer8 = new RunnableRacer ("Creto");
 		RunnableRacer racer9 = new RunnableRacer ("Zé Maria");
 		RunnableRacer racer10 = new RunnableRacer ("Cláudia");
-
-		racer1.run();
-		racer2.run();
-		racer3.run();
-		racer4.run();
-		racer5.run();
-		racer6.run();
-		racer7.run();
-		racer8.run();
-		racer9.run();
-		racer10.run();
+		
+		Thread t1 = new Thread(racer1);
+		Thread t2 = new Thread(racer2);
+		Thread t3 = new Thread(racer3);
+		Thread t4 = new Thread(racer4);
+		Thread t5 = new Thread(racer5);
+		Thread t6 = new Thread(racer6);
+		Thread t7 = new Thread(racer7);
+		Thread t8 = new Thread(racer8);
+		Thread t9 = new Thread(racer9);
+		Thread t10 = new Thread(racer10);
+		
+		t1.start();
+		t2.start();
+		t3.start();
+		t4.start();
+		t5.start();
+		t6.start();
+		t7.start();
+		t8.start();
+		t9.start();
+		t10.start();
 	}
 }
